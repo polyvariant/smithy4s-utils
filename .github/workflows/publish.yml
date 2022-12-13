@@ -20,4 +20,4 @@ jobs:
       - name: Import signing key
         if: env.PGP_SECRET != '' && env.PGP_PASSPHRASE == ''
         run: echo $PGP_SECRET | base64 -di | gpg --import
-      - run: scala-cli publish . --version "0.0.1" --secret-key-password "env:PGP_PASSPHRASE"
+      # - run: scala-cli publish . --version "0.0.1" --secret-key-password "env:PGP_PASSPHRASE"
