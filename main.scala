@@ -1,6 +1,8 @@
 //> using plugin "org.typelevel:::kind-projector:0.13.2"
 //> using lib "com.disneystreaming.smithy4s::smithy4s-core:0.17.1"
 //> using scala "2.13.10"
+//> using publish.repository "central-s01"
+//> using publish.organization "org.polyvariant"
 package smithy4sutils.cache
 
 import smithy4s.kinds._
