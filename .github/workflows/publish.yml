@@ -10,5 +10,5 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: coursier/cache-action@v6.3
-      - uses: VirtusLab/scala-cli-setup@v0.1
+      - uses: VirtusLab/scala-cli-setup@v0.1.18
       - run: scala-cli publish .
