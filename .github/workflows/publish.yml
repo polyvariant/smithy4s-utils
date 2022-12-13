@@ -11,4 +11,4 @@ jobs:
       - uses: actions/checkout@v3
       - uses: coursier/cache-action@v6.3
       - uses: VirtusLab/scala-cli-setup@v0.1.18
-      - run: scala-cli publish . --version "0.0.1"
+      - run: scala-cli publish . --version "0.0.1" --secret-key-password "env:PGP_PASSPHRASE" --secret-key "env:PGP_SECRET"
