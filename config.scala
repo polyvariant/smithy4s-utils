@@ -1,6 +1,6 @@
 //> using publish.repository "central-s01"
 //> using publish.organization "org.polyvariant"
-//> using publish.computeVersion "git:tag"
+//> using publish.computeVersion "command:git describe"
 //> using publish.name "smithy4s-utils"
 //> using publish.url "https://github.com/polyvariant/smithy4s-utils"
 //> using publish.scm "https://github.com/polyvariant/smithy4s-utils"
