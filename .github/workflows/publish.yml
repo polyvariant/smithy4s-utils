@@ -21,4 +21,4 @@ jobs:
         run: |
           echo "$PGP_SECRET" | base64 -di > /tmp/signing-key.gpg
       - run: |
-          scala-cli publish . --scala 2.13.10 --secret-key file:/tmp/signing-key.gpg --secret-key-password "env:PGP_PASSPHRASE"
+          scala-cli publish . --scala 2.13.10 --compute-version "git:tag" --secret-key file:/tmp/signing-key.gpg --secret-key-password "env:PGP_PASSPHRASE"
